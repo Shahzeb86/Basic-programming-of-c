@@ -1,0 +1,21 @@
+// Reverse the digit of this number .
+
+//{ Logic , number = abc,the reverse of this number is cba, reverse = reverse *10+last digit; }
+
+
+#include <stdio.h>
+int main()
+{
+    int n,last,a,reverse = 0;
+    printf("Enter the number\n");
+    scanf("%d",&n);
+    a=n;
+    while(n!=0)
+    {
+        last = n%10;
+        n = n/10;
+        reverse = reverse*10+last;
+    }
+    printf("The reverse digit of the number %d is %d",a,reverse);
+    return 0;
+}
