@@ -1,0 +1,21 @@
+// WAP of Sum of individual digit in single digit of a given number.
+
+//{ Logic  15 = 1+5=6 or 15%9 = 6, 1244 = 1+2+4+4 =11 =1+1 =2 or 1244%9 =2
+// 9 and multiple of 9 are execption , then 9 or x*9 = 9 }
+
+#include <stdio.h>
+int main()
+{
+    int n,i,count=0,last,a;
+    printf("Enter the number\n");
+    scanf("%d",&n);
+   if(n%9==0)
+   {
+       printf("The sum of digits is 9");
+   }
+   else
+   {
+       printf("The sum of digits is %d",n%9);
+   }
+    return 0;
+}
