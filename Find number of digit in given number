@@ -1,0 +1,21 @@
+// Find the number of digit in given number.
+#include <stdio.h>
+int main()
+{
+    int n,i,count=0,last,a;
+    printf("Enter the number\n");
+    scanf("%d",&n);
+    a=n;
+    if(n==0)
+    {
+        count=1;
+    }
+    while(n!=0)
+    {
+     last=n%10;
+     n=n/10;
+     count++;
+    }
+    printf("The digit of this number %d is %d",a,count);
+    return 0;
+}
