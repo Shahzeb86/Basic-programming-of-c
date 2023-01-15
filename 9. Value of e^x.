@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main()
+{
+    float n,i,j,k,product,factorial,sum = 0.0;
+    printf("Enter the number\n");
+    scanf("%f",&n);
+   for(i=0;i<=3;i++)
+   {
+       product = 1.0;
+       for(j=1;j<=i;j++)
+       {
+           product = product*n;
+       }
+       factorial = 1.0;
+       for(k=1.0;k<=i;k++)
+       {
+           factorial = factorial*k;
+       }
+       sum = sum + (product/factorial);
+   }
+   printf("The value of this expression is %f",sum);
+    return 0;
+}
