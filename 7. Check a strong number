@@ -1,0 +1,34 @@
+// Check strong number .
+
+//{ Logic  number = abc,a!+b!+c! = abc , Then abc is a strong number }
+
+
+#include <stdio.h>
+int main()
+{
+    int i,product,n,last,a,b,sum=0;
+    printf("Enter the number\n");
+    scanf("%d",&n);
+    a=n;
+    while(n!=0)
+    {
+        last = n%10;
+        n = n/10;
+        product =1;
+        for(i=1;i<=last;i++)
+        {
+            product = i*product;
+        }
+        sum = sum + product;
+    }
+    if(sum == a)
+    {
+      printf("The number %d is a strong number",a);  
+    }
+    else 
+    {
+        printf("The number %d is not a strong number",a);
+    }
+    
+    return 0;
+}
