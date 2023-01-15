@@ -1,0 +1,21 @@
+// WAP of to calculate a powerOf b.
+
+//{ Logic  a*a*a*......a (b times)
+
+
+#include <stdio.h>
+int main()
+{
+    int i,product,a,pow;
+    printf("Enter the base of number\n");
+    scanf("%d",&a);
+    printf("Enter the power of number\n");
+    scanf("%d",&pow);
+    product = 1;
+  for(i=1;i<=pow;i++)
+  {
+      product=a*product;
+  }
+  printf("The result is %d",product);
+    return 0;
+}
