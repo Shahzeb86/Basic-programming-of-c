@@ -1,0 +1,23 @@
+// .Find a^b using recursion
+
+#include<stdio.h>
+int fun(int a,int b){
+    if(b==1)
+    {
+        return a;
+    }
+    else
+    {
+        return a*fun(a,b-1);
+    }
+}
+int main()
+{
+    int a,b;
+    printf("Enter the base");
+    scanf("%d",&a);
+    printf("Enter the power");
+    scanf("%d",&b);
+    printf("%d",fun(a,b));
+    return 0;
+}
