@@ -1,0 +1,21 @@
+// .Find no. of digit in given number using recursion
+
+#include<stdio.h>
+int fun(int n){
+    if(n<=9)
+    {
+        return 1;
+    }
+    else
+    {
+        return 1 +fun(n/10);
+    } 
+}
+int main()
+{
+    int a;
+    printf("Enter the number");
+    scanf("%d",&a);
+    printf("%d",fun(a));
+    return 0;
+}
