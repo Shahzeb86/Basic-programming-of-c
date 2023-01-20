@@ -1,4 +1,4 @@
-// Using resursion ,convert desimal into binary
+// Using resursion ,convert desimal into octal
 #include<stdio.h>
 void fun(int n){
     if(0<=n && n<8)
