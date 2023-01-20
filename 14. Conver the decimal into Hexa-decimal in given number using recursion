@@ -1,0 +1,41 @@
+// 14. Conver the decimal into Hexa-decimal in given number using recursion
+
+#include<stdio.h>
+void fun(int n){
+    if(n>=0 && n<=9 )
+    {
+        printf("%d",n);
+        return;
+    }
+    else if(n>=10&&n<=15)
+    {
+      switch(n){
+                 case 10 : printf("A");
+                           break;
+                 case 11:  printf("B");
+                           break;
+                 case 12:  printf("C");
+                           break;
+                 case 13:  printf("D");
+                           break;
+                 case 14:  printf("E");
+                           break;
+                 case 15:  printf("F");
+                         
+               }
+       return;
+    } 
+    else 
+    {
+        fun(n/16);
+        printf("%d",n%16);
+    }
+}
+int main()
+{
+    int a;
+    printf("Enter the number");
+    scanf("%d",&a);
+    fun(a);
+    return 0;
+}
